@@ -1,0 +1,18 @@
+[package]
+name = "canopee-sdk"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+bincode = "1"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+
+canopee-protocol = { path = "vendor/canopee-protocol" }
+canopee-config = { path = "vendor/canopee-config" }
+canopee-identity = { path = "vendor/canopee-identity" }
+canopee-storage = { path = "vendor/canopee-storage" }
+
+[dev-dependencies]
+serde_json = "1"
